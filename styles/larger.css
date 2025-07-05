@@ -1,4 +1,8 @@
 @media only screen and (min-width: 38rem) {
+  header {
+    grid-template-columns: 24px auto;
+  }
+
   .hamburger {
     display: none;
   }
@@ -15,49 +19,21 @@
     border: none;
   }
 
-  .main.grid-main {
+  main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 15px;
-    grid-template-areas:
-      "header header"
-      "about photo"
-      "courses courses"
-      "social social";
   }
 
-  /* El h1 ocupa la fila "header" abarcando ambas columnas */
-  .main > h1 {
-    grid-area: header;
-    margin: 0;
-    padding: 20px 0;
-    text-align: center; /* Cambia a left si prefieres */
-    font-size: 3rem;
+  main h1 {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
   }
 
-  /* Sections asignadas a áreas específicas */
-  .main > section:nth-child(2) {
-    grid-area: about;
-  }
-
-  .main > section:nth-child(3) {
-    grid-area: photo;
-  }
-
-  /* Sections que ocupan ambas columnas */
-  .main > section.full-width {
+  .courses {
     grid-column: 1 / -1;
   }
 
-  /* Social también ocupa ambas columnas */
-  .social.full-width {
-    grid-column: 1 / -1;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  /* Ajuste de imagenes para desktop */
   .card-section img {
     height: 300px;
     width: auto;
