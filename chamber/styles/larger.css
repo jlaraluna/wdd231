@@ -54,7 +54,7 @@
   footer {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* FIXED: was 'flex-center' */
+    align-items: center;
     padding: 2rem;
   }
 
