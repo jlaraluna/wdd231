@@ -13,48 +13,58 @@ const getMemberData = async () => {
 
 const displayMembers = (members) => {
   members.forEach((member, index) => {
-    const card = document.createElement('section');
-
-    const businessName = document.createElement('h2');
-    businessName.textContent = member.name;
-
-    const membership = document.createElement('h3');
-    membership.textContent = member.membershipLevel;
-
-    const cardBody = document.createElement('div');
-    cardBody.classList.add('card-body');
-
-    const portrait = document.createElement('img');
-    portrait.src = member.image;
-    portrait.alt = `Portrait of ${member.name}`;
-    portrait.width = 128;  // 🔧 Reservar espacio explícitamente
-    portrait.height = 128;
-
-    if (index !== 0) {
-      portrait.loading = 'lazy';
+    if (index === 0) {
+      // Primer elemento: render inmediato sin lazy
+      renderMember(member, true);
+    } else {
+      // Resto: renderiza cuando el navegador esté libre
+      requestIdleCallback(() => renderMember(member, false));
     }
-
-    const info = document.createElement('div');
-    info.classList.add('info');
-
-    const email = document.createElement('p');
-    email.textContent = `EMAIL: ${member.email}`;
-
-    const phone = document.createElement('p');
-    phone.textContent = `PHONE: ${member.phone}`;
-
-    const website = document.createElement('a');
-    website.textContent = `URL: ${member.website}`;
-    website.href = member.website;
-    website.target = "_blank";
-    website.rel = "noopener noreferrer";
-
-    info.append(email, phone, website);
-    cardBody.append(portrait, info);
-    card.append(businessName, membership, cardBody);
-    cards.appendChild(card);
   });
 };
+
+function renderMember(member, isFirst = false) {
+  const card = document.createElement('section');
+
+  const businessName = document.createElement('h2');
+  businessName.textContent = member.name;
+
+  const membership = document.createElement('h3');
+  membership.textContent = member.membershipLevel;
+
+  const cardBody = document.createElement('div');
+  cardBody.classList.add('card-body');
+
+  const portrait = document.createElement('img');
+  portrait.src = member.image;
+  portrait.alt = `Portrait of ${member.name}`;
+  portrait.width = 128;
+  portrait.height = 128;
+
+  if (!isFirst) {
+    portrait.loading = 'lazy';
+  }
+
+  const info = document.createElement('div');
+  info.classList.add('info');
+
+  const email = document.createElement('p');
+  email.textContent = `EMAIL: ${member.email}`;
+
+  const phone = document.createElement('p');
+  phone.textContent = `PHONE: ${member.phone}`;
+
+  const website = document.createElement('a');
+  website.textContent = `URL: ${member.website}`;
+  website.href = member.website;
+  website.target = "_blank";
+  website.rel = "noopener noreferrer";
+
+  info.append(email, phone, website);
+  cardBody.append(portrait, info);
+  card.append(businessName, membership, cardBody);
+  cards.appendChild(card);
+}
 
 getMemberData();
 
