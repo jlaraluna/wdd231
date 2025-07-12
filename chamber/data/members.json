@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Tierra Madre",
+      "address": "Puebla, MX",
+      "phone": "800-555-1234",
+      "email": "contacto@tierramadre.org",
+      "website": "https://tierramadre.org.mx",
+      "image": "images/tierra-madre.webp",
+      "membershipLevel": "silver"
+    },
+    {
+      "name": "Manos de Fuego",
+      "address": "Oaxaca, MX",
+      "phone": "800-555-6789",
+      "email": "ventas@manosdefuego.org.mx",
+      "website": "https://manosdefuego.org.mx",
+      "image": "images/manos-textiles.webp",
+      "membershipLevel": "gold"
+    },
+    {
+      "name": "Nahui Tech",
+      "address": "CDMX, MX",
+      "phone": "800-555-9876",
+      "email": "info@nahuitech.mx",
+      "website": "https://nahuitech.mx",
+      "image": "images/nahui-tech.webp",
+      "membershipLevel": "member"
+    },
+    {
+      "name": "Casa del Cacao",
+      "address": "Veracruz, MX",
+      "phone": "800-111-2222",
+      "email": "cacao@casadelcacao.mx",
+      "website": "https://casadelcacao.mx",
+      "image": "images/casa-cacao.webp",
+      "membershipLevel": "gold"
+    },
+    {
+      "name": "Xochitl Artesanías",
+      "address": "San Cristóbal de las Casas, MX",
+      "phone": "800-333-4444",
+      "email": "hola@xochitlartesanias.mx",
+      "website": "https://xochitlartesanias.mx",
+      "image": "images/xochitl-logo.webp",
+      "membershipLevel": "silver"
+    },
+    {
+      "name": "EcoChinampa",
+      "address": "Xochimilco, CDMX",
+      "phone": "800-222-3333",
+      "email": "info@ecochinampa.org.mx",
+      "website": "https://ecochinampa.org.mx",
+      "image": "images/chinampa-icon.webp",
+      "membershipLevel": "member"
+    },
+    {
+      "name": "Red Raíz",
+      "address": "Toluca, MX",
+      "phone": "800-777-8888",
+      "email": "contacto@redraiz.org",
+      "website": "https://redraiz.org",
+      "image": "images/redraiz-logo.webp",
+      "membershipLevel": "silver"
+    }
+  ]
+}
