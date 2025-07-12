@@ -14,10 +14,8 @@ const getMemberData = async () => {
 const displayMembers = (members) => {
   members.forEach((member, index) => {
     if (index === 0) {
-      // Primer elemento: render inmediato sin lazy
       renderMember(member, true);
     } else {
-      // Resto: renderiza cuando el navegador esté libre
       requestIdleCallback(() => renderMember(member, false));
     }
   });

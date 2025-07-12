@@ -16,8 +16,6 @@
   --text-light: #ffffff;
   --text-muted: #3d3d3d;
   font-family: 'Lato', sans-serif;
-  font-display: swap;
-  
 }
 
 body {
@@ -205,9 +203,10 @@ header span {
   line-height: 1.6;
   font-family: 'Lato', sans-serif;
   color: var(--text-on-primary);
-  word-break: break-word;
-  overflow-wrap: break-word;
   max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: normal;
+
 }
 
 .card-body a {
