@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* * {
+  outline: 1px solid red;
+} */
 
 :root {
   --primary-color: #C39437;
@@ -41,12 +44,14 @@ h1, h2, h3 {
 
 h1 {
   text-align: center;
-  font-size: 40.5px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 p {
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* === HEADER === */
@@ -139,10 +144,8 @@ header span {
 #cards {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   gap: 1rem;
   min-height: 600px; 
-
   max-width: 1200px;
   margin-inline: auto;
   padding-inline: 1rem;
@@ -181,6 +184,7 @@ header span {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .card-body img {
@@ -337,4 +341,125 @@ footer a {
 
 .social a:hover {
   background: var(--button-color);
+}
+
+
+/* === HERO === */
+
+.hero img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cta {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: var(--text-light);
+  background: var(--button-color);
+}
+
+/* === HOME === */
+
+main {
+  padding: 0 15px;
+}
+
+.events, .weather {
+  text-align: center;
+  border: 1px solid #000;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.card-title {
+  font-family: 'Lato', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.events p {
+  margin: 15px;
+}
+
+
+/* === WEATHER CARD === */
+
+.city-name {
+  font-family: 'Lato', Arial, sans-serif;
+  color: var(--text-on-primary);
+  padding: 10px;
+}
+
+.temperature {
+  font-size: 40.5px;
+  font-weight: bold;
+}
+
+.description {
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+#humidity-value,
+#wind-speed-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+#weather-icon {
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+}
+
+
+/* === FORECAST === */
+
+.day {
+  margin: 20px;
+  font-size: 0.9rem;
+}
+
+.day h3 {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+.day p {
+  color: var(--text-on-primary);
+  font-weight: 600;
 }

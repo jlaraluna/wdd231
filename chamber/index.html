@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Member Directory | Nahua Chamber of Commerce</title>
+        <meta
+            name="description"
+            content="Explore the Nahua Chamber of Commerce Member Directory. Discover local businesses, cooperatives, and organizations committed to sustainable growth and cultural heritage."
+        />
+        <meta name="author" content="Joel Lara Luna" />
+        <link rel="icon" type="image/ico" href="images/favicon.ico" />
+        <!-- Social Media Tags -->
+        <meta property="og:title" content="Member Directory | Nahua Chamber of Commerce" />
+        <meta
+            property="og:description"
+            content="Connect with local businesses and organizations rooted in cultural heritage and sustainable commerce."
+        />
+        <meta property="og:image" content="https://jlaraluna.github.io/wdd231/chamber/images/tierra-madre.webp" />
+        <meta property="og:url" content="https://jlaraluna.github.io/wdd231/chamber/directory.html" />
+        <!-- CSS  -->
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/small.css" />
+        <link rel="stylesheet" href="styles/larger.css" />
+
+        <!-- Preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- Load fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Mate+SC&display=swap" rel="stylesheet" />
+
+        <!-- Javascript -->
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/weather.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.webp" alt="Site Logo" width="30" height="30" />
+            <span>Nahua Chamber of Commerce</span>
+            <button id="ham-btn" class="hamburger" aria-label="Open menu"></button>
+        </header>
+        <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 38rem)" />
+                <img src="images/hero-small.webp" alt="Traditional street market in Mexico City, c.1885" width="500" height="700" />
+            </picture>
+            <button id="hero" class="cta" aria-label="Join the Chamber">Join Us</button>
+        </section>
+
+        <main>
+            <h1>Your success starts here</h1>
+
+            <!-- Events Section -->
+            <section class="events" aria-labelledby="events-title">
+                <h2 id="events-title" class="card-title">Upcoming Event</h2>
+                <div class="info">
+                    <p>
+                        Join us this Saturday at the <b>Community Exchange Fair,</b> hosted by our local Chamber of Commerce. This event brings
+                        together artisans, growers, small businesses, and neighbors in a celebration of regional trade, culture, and sustainability.
+                        Discover handcrafted goods, participate in open dialogue forums, and learn how local networks can empower economic resilience.
+                    </p>
+                    <p>📍<b>Plaza Central — July 13,</b> 10:00 AM to 5:00 PM 🎟️ Free entrance | Open to all</p>
+                </div>
+            </section>
+
+            <!-- Weather Section -->
+            <section class="weather card" aria-labelledby="weather-title">
+                <h2 id="weather-title" class="card-title">Weather Today</h2>
+                <h3 class="city-name">Mexico City</h3>
+
+                <div class="weather-main">
+                    <p class="temperature"><span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="" />
+                        <figcaption id="weather-desc" class="description"></figcaption>
+                    </figure>
+                </div>
+
+                <div class="weather-details">
+                    <div class="detail">
+                        <span class="label">Humidity</span>
+                        <span id="humidity-value">60%</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Wind Speed</span>
+                        <span id="wind-speed-value">12 km/h</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Forecast Section -->
+            <section class="weather card" aria-labelledby="weather-title">
+                <h2 id="weather-title" class="card-title">Weather Forecast</h2>
+
+                <div class="forecast">
+                    <div class="day">
+                        <h3>Today</h3>
+                        <p class="temp" id="today-temp"></p>
+                    </div>
+                    <div class="day">
+                        <h3>Tomorrow</h3>
+                        <p class="temp" id="tomorrow-temp"></p>
+                    </div>
+                    <div class="day">
+                        <h3>Day After</h3>
+                        <p class="temp" id="dayafter-temp"></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Spotlight Section (Business Highlights) -->
+            <section class="spotlight" aria-labelledby="spotlight-title">
+                <h2 class="card-title" id="spotlight-title">Business Spotlight</h2>
+                <!-- Showcase of featured member businesses -->
+            </section>
+        </main>
+
+        <footer>
+            <section class="adress">
+                <h2>Contact Information</h2>
+                <p><b>Nahua Chamber of Commerce</b></p>
+                <p>Av. Revolución S/N</p>
+                <p>Cuauhtémoc, CDMX 12123</p>
+                <p>
+                    <a href="mailto:info@nahua.org">info@nahua.org</a>
+                </p>
+                <p>
+                    <a href="tel:+5255552300">(+52) 555-2300</a>
+                </p>
+            </section>
+
+            <section class="social">
+                <a href="https://github.com/jlaraluna/wdd231.git" target="_blank"
+                    ><img src="images/github.svg" alt="Github Logo" width="16" height="16"
+                /></a>
+                <a href="https://www.linkedin.com/in/joel-lara-luna/" target="_blank"
+                    ><img src="images/linkedin.svg" alt="Linkedin Logo" width="16" height="16"
+                /></a>
+                <a href="https://x.com/?lang=es" target="_blank"><img src="images/twitter-x.svg" alt="X / Twitter Logo" width="16" height="16" /></a>
+            </section>
+            <section class="student-info">
+                <h2>Site Info</h2>
+                <p>WDD231 Class Project</p>
+                <p>Joel Lara Luna</p>
+                <p><span id="currentYear"></span>2025</p>
+                <p id="lastModified">Last modified:</p>
+            </section>
+        </footer>
+    </body>
+</html>
