@@ -85,9 +85,9 @@
 
   }
 
-    main {
+    .home-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Columna principal (2 partes) + secundaria (1 parte) */
+    grid-template-columns: 2fr 1fr;
     grid-template-areas: 
       "headline    headline"
       "events      weather"
