@@ -1,148 +1,139 @@
 @media only screen and (min-width: 38rem) {
-
-  /* === HEADER === */
-  header {
-    grid-template-columns: 24px auto;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  /* === NAVIGATION === */
-  .navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .navigation ul {
-    display: flex;
-  }
-
-  .navigation a {
-    border: none;
-  }
-
-  /* === DIRECTORY VIEW (GRID MODE) === */
-  #cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
-    margin: 0 auto;
-  }
-
-  #cards section {
-    padding: 1.5rem;
-  }
-
-  .card-body {
-    align-items: center;
-  }
-
-  .card-body img {
-    width: 128px;
-    height: 128px;
-  }
-
-  /* === DIRECTORY VIEW (LIST MODE OVERRIDE) === */
-  #cards.list section {
-    grid-template-columns: 1.5fr 2fr 2fr;
-  }
-
-  /* === FOOTER === */
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-  }
-
-  footer section {
-    flex: 1;
-  }
-
-  .social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* === HERO === */
-
-  .hero {
-    position: relative;
-    height: 100vh;
-    width: auto;
+    /* === HEADER === */
+    header {
+        grid-template-columns: 24px auto;
     }
 
-  .hero img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+    .hamburger {
+        display: none;
+    }
 
-  }
+    /* === NAVIGATION === */
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    /* === DIRECTORY VIEW (GRID MODE) === */
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1rem;
+        margin: 0 auto;
+    }
+
+    #cards section {
+        padding: 1.5rem;
+    }
+
+    .card-body img {
+        width: 128px;
+        height: 128px;
+    }
+
+    /* === DIRECTORY VIEW (LIST MODE OVERRIDE) === */
+    #cards.list section {
+        grid-template-columns: 1.5fr 2fr 2fr;
+    }
+
+    /* === FOOTER === */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    footer section {
+        flex: 1;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* === HERO === */
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
 
     .home-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-      "headline    headline"
-      "events      weather"
-      "events      forecast"
-      "spotlight   spotlight";
-    gap: 2rem;
-    padding: 2rem;
-  }
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "headline    headline"
+            "events      weather"
+            "events      forecast"
+            "spotlight   spotlight";
+        gap: 1rem;
+        padding: 0 0.5rem;
+    }
 
-  h1 {
-    grid-area: headline;
-    font-size: 2rem;
-  }
+    h1 {
+        grid-area: headline;
+        font-size: 1.6rem;
+    }
 
-  .events {
-    grid-area: events;
-    display: flex;
-    flex-direction: column;
-  }
+    .events {
+        grid-area: events;
+        display: flex;
+        flex-direction: column;
+    }
 
-  .info {
-    display: block;
-    align-items: center;
-    margin: auto 0;
-  }
+    .event-info {
+        display: block;
+        align-items: center;
+        margin: auto 0;
+    }
 
+    .event-info p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
 
+    .weather.card:first-of-type {
+        grid-area: weather;
+    }
 
-  .weather.card:first-of-type {
-    grid-area: weather;
-  }
+    .weather.card:last-of-type {
+        grid-area: forecast;
+    }
 
-  .weather.card:last-of-type {
-    grid-area: forecast;
-  }
+    .spotlight {
+        grid-area: spotlight;
+    }
 
-  .spotlight {
-    grid-area: spotlight;
-  }
+    .forecast {
+        display: flex;
+        justify-content: space-between;
+    }
 
-  /* Opcional: tarjetas */
-  .card {
-
-  }
-
-  .forecast {
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5rem;
-  }
-
-  .forecast .day {
-    flex: 1;
-    text-align: center;
-    padding: 0.5rem;
-  }
-
+    .forecast .day {
+        flex: 1;
+        text-align: center;
+    }
 }

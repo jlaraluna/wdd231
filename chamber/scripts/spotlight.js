@@ -12,7 +12,19 @@ const getMemberData = async () => {
 };
 
 const displayMembers = (members) => {
-  members.forEach((member, index) => {
+  const goldSilver = members.filter(m =>
+    m.membershipLevel === "gold" || m.membershipLevel === "silver"
+  );
+
+  for (let i = goldSilver.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [goldSilver[i], goldSilver[j]] = [goldSilver[j], goldSilver[i]];
+  }
+
+  const selected = goldSilver.slice(0, 3);
+  console.log("Seleccionados para Spotlight:", selected);
+
+  selected.forEach((member, index) => {
     if (index === 0) {
       renderMember(member, true);
     } else {
@@ -20,6 +32,7 @@ const displayMembers = (members) => {
     }
   });
 };
+
 
 function renderMember(member, isFirst = false) {
   const card = document.createElement('section');
@@ -65,17 +78,3 @@ function renderMember(member, isFirst = false) {
 }
 
 getMemberData();
-
-
-const gridButton = document.querySelector('#grid');
-const listButton = document.querySelector('#list');
-
-gridButton.addEventListener('click', () => {
-  cards.classList.add('grid');
-  cards.classList.remove('list');
-});
-
-listButton.addEventListener('click', () => {
-  cards.classList.add('list');
-  cards.classList.remove('grid');
-});

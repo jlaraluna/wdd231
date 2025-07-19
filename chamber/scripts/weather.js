@@ -39,8 +39,8 @@ function displayCurrentWeather(data) {
   weatherIcon.setAttribute('alt', description);
   captionDesc.textContent = description;
 
-  humidity.textContent = `Humidity: ${data.main.humidity}%`;
-  windSpeed.textContent = `Wind Speed: ${data.wind.speed} m/s`;
+  humidity.textContent = `${data.main.humidity}`;
+  windSpeed.textContent = `${data.wind.speed}`;
 }
 
 async function getForecast() {
