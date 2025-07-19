@@ -1,8 +1,9 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const humidity = document.querySelector('#humidity');
-const windSpeed = document.querySelector('#wind-speed');
+const humidity = document.querySelector('#humidity-value');
+const windSpeed = document.querySelector('#wind-speed-value');
+
 
 
 const todayTemp = document.querySelector('#today-temp');
@@ -39,8 +40,8 @@ function displayCurrentWeather(data) {
   weatherIcon.setAttribute('alt', description);
   captionDesc.textContent = description;
 
-  humidity.textContent = `${data.main.humidity}`;
-  windSpeed.textContent = `${data.wind.speed}`;
+  humidity.textContent = `${data.main.humidity}%`;
+  windSpeed.textContent = `${data.wind.speed} km/h`;
 }
 
 async function getForecast() {
