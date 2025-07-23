@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home Page | Joel Lara Luna</title>
         <meta name="description" content="Home Page" />
@@ -20,15 +20,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
         <!-- Preconnect -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
         <!-- Load fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
 
         <script src="scripts/course.js" defer></script>
         <script src="scripts/date.js" defer></script>
         <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/modal.js" defer></script>
     </head>
 
     <body>
@@ -72,6 +73,21 @@
                 <div class="courses-container" id="coursesContainer"></div>
                 <p id="totalCreditsText">Total Credits: <span id="totalCredits">0</span></p>
             </section>
+
+            <button id="openButton1">Button 1</button>
+            <button id="openButton2">Button 2</button>
+            <button id="openButton3">Button 3</button>
+            <button id="openButton4">Button 4</button>
+
+            <div id="showHere"></div>
+
+            <dialog id="dialogBox">
+                <div>
+                    <h2>Sample title</h2>
+                    <button id="closeButton">❌</button>
+                </div>
+                <p></p>
+            </dialog>
         </main>
         <footer>
             <div class="social">

@@ -523,3 +523,180 @@ footer a {
     color: var(--text-color);
     margin-bottom: 25px;
 }
+
+
+/* ----------- FORM ----------- */
+
+.form {
+    margin: 0;
+}
+.form fieldset {
+    margin: 0 auto;
+    padding: .75rem;
+    width: 96%;
+    max-width: 400px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    border-style: none;
+}
+
+legend {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form label {
+    font-weight: 500;
+    display: block;
+    padding-top: 1rem;
+    font-size: 16px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"] {
+    border-style: none;
+    background: var(--link-on-primary);
+    /* border-bottom: 1px solid var(--text-color); */
+    width: 100%;
+    max-width: 400px;
+    padding-bottom: 0.3rem;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus {
+    outline: none;
+    border-bottom: 2px solid var(--color-secondary-orange);
+    padding-bottom: 0.3rem;
+}
+
+.form select,
+.form textarea {
+    border-style: none;
+    width: 100%;
+    max-width: 400px;
+    background: var(--link-on-primary);
+    border: 1px solid var(--color-text-dark);;
+    padding: 8px;
+    margin-top: 5px;
+    font-family: var(--font-ui);
+}
+
+.form select:focus,
+.form textarea:focus {
+    outline: none;
+    border: 2px solid var(--color-secondary-orange);
+}
+
+.form input[type="submit"]{
+    border: none;
+    background: var(--button-color);
+    color: #fff;
+    padding: .50rem;
+    width: 100%;
+    max-width: 400px;
+    /* margin: 1.2rem 2% 0.75rem 2%; */
+    margin-top: 18px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.form input[type="submit"]:hover {
+    background: var(--text-muted);
+}
+
+
+/* ----------- MEMBERSHIPS ----------- */
+
+.membership-levels {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.member-title {
+    color: var(--text-color);
+}
+
+.card-member {
+  background-color: var(--text-light);
+  padding: 1rem;
+
+}
+
+.card-member h3 {
+  color: var(--text-muted);
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* .card-member button {
+  display: block;
+} */
+
+dialog {
+  border: none;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 90%;
+  width: 400px;
+  background: white;
+  z-index: 1000;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+.modal-content h2 {
+    color: var(--text-muted);
+}
+
+.close-modal {
+    background: #000;
+    width: 30px;
+    margin: 0 auto;
+}
+
+
+
+
+/* ----------- THANKS ----------- */
+.submit {
+    text-align: center;
+    justify-content: center;
+}
+
+.container h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    color: var(--color-secondary-orange);
+}
+
+.container p {
+    font-size: 18px;
+    font-family: var(--font-ui);
+}
+
