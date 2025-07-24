@@ -136,4 +136,15 @@
         flex: 1;
         text-align: center;
     }
+
+    .join-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem; /* espacio entre columnas */
+        padding: 2rem;
+    }
+
+    .container-2 {
+        margin: auto 0;
+    }
 }

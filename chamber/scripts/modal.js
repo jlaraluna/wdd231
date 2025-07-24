@@ -13,3 +13,11 @@ button.addEventListener('click', () => {
     button.closest('dialog').close();
 });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+const now = new Date().toISOString();
+const timestampInput = document.getElementById("timestamp");
+if (timestampInput) {
+    timestampInput.value = now;
+}
+});

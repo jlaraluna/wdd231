@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Directory | Mexico's Chamber of Commerce</title>
+        <title>Thank You | Mexico's Chamber of Commerce</title>
         <meta
             name="description"
-            content="Explore the Mexico's Chamber of Commerce Member Directory. Discover local businesses, cooperatives, and organizations committed to sustainable growth and cultural heritage."
+            content="Thank you for joining Mexico's Chamber of Commerce. Your submission has been received, and we look forward to welcoming you into our network of local businesses committed to sustainable development and cultural heritage."
         />
         <meta name="author" content="Joel Lara Luna" />
         <link rel="icon" type="image/ico" href="images/favicon.ico" />
@@ -36,9 +36,9 @@
         <!-- Javascript -->
         <script src="scripts/date.js" defer></script>
         <script src="scripts/navigation.js" defer></script>
-        <script src="scripts/members.js" defer></script>
     </head>
     <body>
+        <div class="wrapper">
         <header>
             <img src="images/logo.webp" alt="Site Logo" width="30" height="30" />
             <span>Mexico Chamber of Commerce</span>
@@ -48,17 +48,12 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li class="current"><a href="directory.html">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
         <main class="main">
-            <h1>Directory</h1>
-            <div class="menu">
-                <button id="grid" aria-label="grid">Grid</button>
-                <button id="list" aria-label="list">List</button>
-            </div>
-            <div id="cards" class="grid"></div>
+            <div id="results"></div>
         </main>
         <footer>
             <section class="adress">
@@ -91,5 +86,7 @@
                 <p id="lastModified"></p>
             </section>
         </footer>
+        <script src="scripts/thankyou.js"></script>
+        </div>
     </body>
 </html>
