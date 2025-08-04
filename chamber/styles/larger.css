@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 1025px) {
     /* === HEADER === */
     header {
         grid-template-columns: 24px auto;
@@ -146,5 +146,10 @@
 
     .container-2 {
         margin: auto 0;
+    }
+
+    #allplaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

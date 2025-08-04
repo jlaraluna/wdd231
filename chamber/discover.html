@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Discover | Mexico's Chamber of Commerce</title>
+        <meta
+            name="description"
+            content="The Chamber of Commerce connects you with local enterprises and initiatives focused on clean energy, cultural resilience, and sustainable development in Mexico."
+        />
+
+        <meta name="author" content="Joel Lara Luna" />
+        <link rel="icon" href="images/favicon.ico" />
+        <!-- Social Media Tags -->
+        <meta property="og:title" content="Member Directory | Nahua Chamber of Commerce" />
+        <meta
+            property="og:description"
+            content="Connect with local businesses and organizations rooted in cultural heritage and sustainable commerce."
+        />
+        <meta property="og:image" content="https://jlaraluna.github.io/wdd231/chamber/images/tierra-madre.webp" />
+        <meta property="og:url" content="https://jlaraluna.github.io/wdd231/chamber/directory.html" />
+        <!-- CSS  -->
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/small.css" />
+        <link rel="stylesheet" href="styles/medium.css" />
+        <link rel="stylesheet" href="styles/larger.css" />
+
+        <!-- Preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- Load fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Javascript -->
+        <script type="module" src="scripts/scripts.mjs" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.webp" alt="Site Logo" width="30" height="30" />
+            <span>Mexico Chamber of Commerce</span>
+            <button id="ham-btn" class="hamburger" aria-label="Open menu"></button>
+        </header>
+        <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Discover Our Area</h1>
+            <div id="sidebar">
+                <div id="visit-message"></div>
+            </div>
+
+            <section class="grid-container">
+                <div id="allplaces"></div>
+            </section>
+        </main>
+
+        <footer>
+            <section class="adress">
+                <h2>Contact Information</h2>
+                <p><b>Nahua Chamber of Commerce</b></p>
+                <p>Av. Revolución S/N</p>
+                <p>Cuauhtémoc, CDMX 12123</p>
+                <p>
+                    <a href="mailto:info@nahua.org">info@nahua.org</a>
+                </p>
+                <p>
+                    <a href="tel:+5255552300">(+52) 555-2300</a>
+                </p>
+            </section>
+
+            <section class="social">
+                <a href="https://github.com/jlaraluna/wdd231.git" target="_blank"
+                    ><img src="images/github.svg" alt="Github Logo" width="16" height="16"
+                /></a>
+                <a href="https://www.linkedin.com/in/joel-lara-luna/" target="_blank"
+                    ><img src="images/linkedin.svg" alt="Linkedin Logo" width="16" height="16"
+                /></a>
+                <a href="https://x.com/?lang=es" target="_blank"><img src="images/twitter-x.svg" alt="X / Twitter Logo" width="16" height="16" /></a>
+            </section>
+            <section class="student-info">
+                <h2>Site Info</h2>
+                <p>WDD231 Class Project</p>
+                <p>Joel Lara Luna</p>
+                <p><span id="currentYear"></span></p>
+                <p id="lastModified"></p>
+            </section>
+        </footer>
+    </body>
+</html>

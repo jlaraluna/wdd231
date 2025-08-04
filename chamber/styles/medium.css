@@ -1,0 +1,19 @@
+@media only screen and (min-width: 641px) {
+    #allplaces div {
+        display: grid;
+        grid-template-areas:
+            "photograph name"
+            "photograph description"
+            "photograph address";
+    }
+
+    #allplaces div img {
+        width: 300px;
+        grid-area: photograph;
+        margin: auto 0;
+    }
+
+    #allplaces div img:hover {
+        filter: grayscale(100%);
+    }
+}

@@ -754,3 +754,54 @@ dialog::backdrop {
     width: 150px;
     color: var(--text-muted);
 }
+
+
+/* ----------- DISCOVER ----------- */
+
+#allplaces div {
+    margin: 1rem 8px;
+    background: var(--link-on-primary);
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "address";
+}
+
+#allplaces div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+
+    font-size: 24px;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+#allplaces div img {
+    width: 100%;
+    grid-area: photograph;
+}
+
+#allplaces div p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+#allplaces div address {
+    margin: 1rem 10px;
+    grid-area: address;
+
+    color: var(--text-muted);
+}
+
+#visit-message {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+
