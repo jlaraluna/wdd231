@@ -768,7 +768,8 @@ dialog::backdrop {
     "name"
     "photograph"
     "description"
-    "address";
+    "address"
+    "button";
 }
 
 #allplaces div h2 {

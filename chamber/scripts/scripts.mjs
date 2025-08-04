@@ -30,6 +30,14 @@ function displayItems(places) {
   thedesc.innerText = x.description;
   thecard.appendChild(thedesc);
 
+  
+  const learnMoreBtn = document.createElement("button");
+  learnMoreBtn.innerText = "Learn More";
+  learnMoreBtn.addEventListener("click", () => {
+    alert(`More about: ${x.name}`);
+  });
+  thecard.appendChild(learnMoreBtn);
+
   showHere.appendChild(thecard);
   });
 }
