@@ -39,9 +39,10 @@ function renderSatellite(satellite, isFirst = false) {
 
   const link = document.createElement('a');
   link.href = satellite.link;
-  link.textContent = 'Learn more';
+  link.innerHTML = `Learn more <span class="visually-hidden">about ${satellite.name}</span>`;
   link.target = '_blank';
   link.rel = 'noopener noreferrer';
+
 
   card.append(name, details, overview, link);
   cards.appendChild(card);

@@ -31,7 +31,7 @@ function displayArticle(article) {
 
   const link = document.createElement('a');
   link.href = article.link;
-  link.textContent = "Read more";
+  link.textContent = "Read this article";
   link.target = "_blank";
   link.rel = "noopener noreferrer";
 
