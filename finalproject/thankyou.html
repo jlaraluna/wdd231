@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thank You | OrbitTracker</title>
+        <meta
+            name="description"
+            content="Thank you for contacting OrbitTracker! Your message has been received. OrbitTracker provides real-time satellite tracking and educational resources for space enthusiasts and students."
+        />
+
+        <meta name="author" content="Joel Lara Luna" />
+        <!-- CSS  -->
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/small.css" />
+        <link rel="stylesheet" href="styles/larger.css" />
+        <link rel="icon" href="images/favicon.ico" />
+        <!-- Social Media Tags -->
+        <meta property="og:title" content="Thank You | OrbitTracker" />
+        <meta
+            property="og:description"
+            content="Thank you for contacting OrbitTracker! Your message has been received. OrbitTracker provides real-time satellite tracking and educational resources for space enthusiasts and students."
+        />
+        <meta property="og:image" content="https://jlaraluna.github.io/wdd231/chamber/images/tierra-madre.webp" />
+        <meta property="og:url" content="https://jlaraluna.github.io/wdd231/chamber/directory.html" />
+        <!-- Preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- Load fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&family=Public+Sans&display=swap" rel="stylesheet" />
+        <!-- Javascript -->
+        <script type="module" src="scripts/main.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <img src="images/logo.svg" alt="Site Logo" width="90" height="90" />
+                <span>OrbitTracker</span>
+                <button id="ham-btn" class="hamburger" aria-label="Open menu"></button>
+            </header>
+            <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <main class="thanks-main">
+                <div id="results"></div>
+            </main>
+
+            <footer>
+                <section class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Developed by Joel Lara Luna</p>
+                    <p>For WDD231: Frontend Development</p>
+                    <p>Email: <a href="mailto:joel@orbittracker.dev">joel@orbittracker.dev</a></p>
+                </section>
+
+                <section class="site-info">
+                    <h2>Site Information</h2>
+                    <p>This website provides real-time orbital data for satellite tracking and educational purposes.</p>
+                    <p><span id="currentYear"></span></p>
+                    <p><span id="lastModified"></span></p>
+                </section>
+            </footer>
+        </div>
+    </body>
+</html>

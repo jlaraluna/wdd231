@@ -1,0 +1,109 @@
+{
+  "satellites": [
+    {
+      "name": "Sputnik 1",
+      "launching_year": 1957,
+      "country": "Soviet Union",
+      "overview": "First artificial Earth satellite, launched the Space Age, measured upper-atmosphere density and ionospheric radio propagation.",
+      "link": "https://en.wikipedia.org/wiki/Sputnik_1"
+    },
+    {
+      "name": "Sputnik 2",
+      "launching_year": 1957,
+      "country": "Soviet Union",
+      "overview": "Second satellite, carried Laika, the first animal to orbit Earth.",
+      "link": "https://en.wikipedia.org/wiki/Sputnik_2"
+    },
+    {
+      "name": "Explorer 1",
+      "launching_year": 1958,
+      "country": "United States",
+      "overview": "First US satellite; discovered the Van Allen radiation belts.",
+      "link": "https://en.wikipedia.org/wiki/Explorer_1"
+    },
+    {
+      "name": "Vanguard 1",
+      "launching_year": 1958,
+      "country": "United States",
+      "overview": "First satellite powered by solar cells and one of the oldest human-made objects still in orbit; used to study Earth's shape.",
+      "link": "https://en.wikipedia.org/wiki/Vanguard_1"
+    },
+    {
+      "name": "TIROS-1",
+      "launching_year": 1960,
+      "country": "United States",
+      "overview": "First operational meteorological satellite; demonstrated weather observation from space.",
+      "link": "https://en.wikipedia.org/wiki/TIROS-1"
+    },
+    {
+      "name": "Echo 1",
+      "launching_year": 1960,
+      "country": "United States",
+      "overview": "Passive communications satellite (giant reflective balloon) that pioneered satellite-based signal relay.",
+      "link": "https://en.wikipedia.org/wiki/Echo_1"
+    },
+    {
+      "name": "Telstar 1",
+      "launching_year": 1962,
+      "country": "United States",
+      "overview": "First active communications satellite; enabled live transatlantic television transmission.",
+      "link": "https://en.wikipedia.org/wiki/Telstar_1"
+    },
+    {
+      "name": "Intelsat I (Early Bird)",
+      "launching_year": 1965,
+      "country": "United States",
+      "overview": "First commercial geostationary communications satellite; provided regular US-Europe connectivity.",
+      "link": "https://en.wikipedia.org/wiki/Intelsat_I"
+    },
+    {
+      "name": "Transit 1B",
+      "launching_year": 1960,
+      "country": "United States",
+      "overview": "First operational satellite navigation system (Transit), precursor to modern GNSS.",
+      "link": "https://en.wikipedia.org/wiki/Transit_(satellite)"
+    },
+    {
+      "name": "Explorer 6",
+      "launching_year": 1959,
+      "country": "United States",
+      "overview": "First satellite to take a crude image of Earth from orbit.",
+      "link": "https://en.wikipedia.org/wiki/Explorer_6"
+    },
+    {
+      "name": "Landsat 1 (ERTS-1)",
+      "launching_year": 1972,
+      "country": "United States",
+      "overview": "First civilian Earth observation satellite designed for long-term resource monitoring.",
+      "link": "https://en.wikipedia.org/wiki/Landsat_1"
+    },
+    {
+      "name": "Hubble Space Telescope",
+      "launching_year": 1990,
+      "country": "United States / International",
+      "overview": "Revolutionized astronomy with deep images, direct observations of galaxies, black holes, and the universe's age; serviceable in orbit.",
+      "link": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope"
+    },
+    {
+      "name": "Navstar GPS I (Block I)",
+      "launching_year": 1978,
+      "country": "United States",
+      "overview": "Early satellites in the GPS constellation; enabled real-time precision navigation worldwide.",
+      "link": "https://en.wikipedia.org/wiki/Navstar_Global_Positioning_System"
+    },
+    {
+      "name": "Skylab",
+      "launching_year": 1973,
+      "country": "United States",
+      "overview": "First American space station; enabled extended human habitation and scientific research in orbit.",
+      "link": "https://en.wikipedia.org/wiki/Skylab"
+    },
+    {
+      "name": "CubeSat",
+      "launching_year": 2003,
+      "country": "United States (concept origin)",
+      "overview": "Standard small satellite form factor; democratized access to space for universities, startups, and research.",
+      "link": "https://en.wikipedia.org/wiki/CubeSat"
+    }
+  ]
+}

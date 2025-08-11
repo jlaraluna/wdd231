@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home | OrbitTracker</title>
+        <meta
+            name="description"
+            content="This website provides real-time and educational information about satellites orbiting Earth. Users can browse a curated list of satellites, explore key data like launch date and operator, and save their favorite satellites for later viewing. It serves as a learning tool and a tech showcase for space enthusiasts, students, and curious minds."
+        />
+
+        <meta name="author" content="Joel Lara Luna" />
+        <!-- CSS  -->
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/small.css" />
+        <link rel="stylesheet" href="styles/larger.css" />
+        <link rel="icon" href="images/favicon.ico" />
+        <!-- Social Media Tags -->
+        <meta property="og:title" content="Home | OrbitTracker" />
+        <meta
+            property="og:description"
+            content="This website provides real-time and educational information about satellites orbiting Earth. Users can browse a curated list of satellites, explore key data like launch date and operator, and save their favorite satellites for later viewing. It serves as a learning tool and a tech showcase for space enthusiasts, students, and curious minds."
+        />
+        <meta property="og:image" content="https://jlaraluna.github.io/wdd231/chamber/images/tierra-madre.webp" />
+        <meta property="og:url" content="https://jlaraluna.github.io/wdd231/chamber/directory.html" />
+        <!-- Preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- Load fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&family=Public+Sans&display=swap" rel="stylesheet" />
+        <!-- Javascript -->
+        <script type="module" src="scripts/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.svg" alt="Site Logo" width="90" height="90" />
+            <span>OrbitTracker</span>
+            <button id="ham-btn" class="hamburger" aria-label="Open menu"></button>
+        </header>
+        <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 38rem)" />
+                <img src="images/hero-small.webp" alt="Satellite orbiting in the space" width="500" height="700" />
+            </picture>
+            <button id="hero" class="cta" aria-label="Join">Get our lastest news</button>
+        </section>
+
+        <main class="home-grid">
+            <h1>About satellites</h1>
+
+            <!-- Launch Section -->
+            <section class="card card--launch" aria-labelledby="launch-title">
+                <button class="card__button" aria-label="View Launch Details">
+                    <div class="card__background" style="background-image: url('images/launch.webp')"></div>
+                    <div class="card__overlay">
+                        <h2 id="launch-title" class="card__title">UK's Latest Launch</h2>
+                    </div>
+                </button>
+            </section>
+
+            <!-- Launch Modal -->
+            <dialog id="launchModal" class="modal">
+                <form method="dialog">
+                    <button class="modal__close" aria-label="Close">&times;</button>
+                </form>
+                <h2 class="modal__title">Launch Details</h2>
+                <p>
+                    <strong>Skynet 6A</strong> is the UK's next-gen military communications satellite, built entirely on British soil at RAL Space. It
+                    offers over 3.5× the capacity of Skynet 5 and is set to enter service in 2027 to provide secure, resilient global connectivity for
+                    the UK armed forces.
+                </p>
+            </dialog>
+
+            <!-- Weather Section -->
+            <section class="card card--weather" aria-labelledby="weather-title">
+                <h2 id="weather-title" class="card__title">Weather Today</h2>
+                <h3 class="weather__city">Mexico City</h3>
+
+                <div class="weather__main">
+                    <p class="weather__temperature"><span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="images/placeholder.png" alt="Weather icon" />
+                        <figcaption id="weather-desc" class="weather__description"></figcaption>
+                    </figure>
+                </div>
+
+                <div class="weather__details">
+                    <div class="weather__detail">
+                        <span class="label">Humidity</span>
+                        <span id="humidity-value">60%</span>
+                    </div>
+                    <div class="weather__detail">
+                        <span class="label">Wind Speed</span>
+                        <span id="wind-speed-value"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Forecast Section -->
+            <section class="card card--forecast" aria-labelledby="forecast-title">
+                <h2 id="forecast-title" class="card__title">Weather Forecast</h2>
+
+                <div class="forecast">
+                    <div class="forecast__day">
+                        <h3>Today</h3>
+                        <p class="forecast__temp" id="today-temp"></p>
+                    </div>
+                    <div class="forecast__day">
+                        <h3>Tomorrow</h3>
+                        <p class="forecast__temp" id="tomorrow-temp"></p>
+                    </div>
+                    <div class="forecast__day">
+                        <h3>Day After</h3>
+                        <p class="forecast__temp" id="dayafter-temp"></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Articles -->
+            <section id="dynamic-articles" class="spotlight card"></section>
+        </main>
+
+        <footer>
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Developed by Joel Lara Luna</p>
+                <p>For WDD231: Frontend Development</p>
+                <p>Email: <a href="mailto:joel@orbittracker.dev">joel@orbittracker.dev</a></p>
+            </section>
+
+            <section class="site-info">
+                <h2>Site Information</h2>
+                <p>This website provides real-time orbital data for satellite tracking and educational purposes.</p>
+                <p><span id="currentYear"></span></p>
+                <p><span id="lastModified"></span></p>
+                <div id="visit-message"></div>
+            </section>
+        </footer>
+    </body>
+</html>

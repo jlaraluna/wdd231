@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact | OrbitTracker</title>
+        <meta
+            name="description"
+            content="Contact OrbitTracker to subscribe for satellite updates, newsletters, and educational resources. Get in touch for support, feedback, or partnership inquiries related to real-time satellite tracking and space education."
+        />
+
+        <meta name="author" content="Joel Lara Luna" />
+        <!-- CSS  -->
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/small.css" />
+        <link rel="stylesheet" href="styles/larger.css" />
+        <link rel="icon" href="images/favicon.ico" />
+        <!-- Social Media Tags -->
+        <meta property="og:title" content="Contact | OrbitTracker" />
+        <meta
+            property="og:description"
+            content="Contact OrbitTracker to subscribe for satellite updates, newsletters, and educational resources. Get in touch for support, feedback, or partnership inquiries related to real-time satellite tracking and space education."
+        />
+        <meta property="og:image" content="https://jlaraluna.github.io/wdd231/chamber/images/tierra-madre.webp" />
+        <meta property="og:url" content="https://jlaraluna.github.io/wdd231/chamber/directory.html" />
+        <!-- Preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- Load fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&family=Public+Sans&display=swap" rel="stylesheet" />
+        <!-- Javascript -->
+        <script type="module" src="scripts/main.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+        <header>
+            <img src="images/logo.svg" alt="Site Logo" width="90" height="90" />
+            <span>OrbitTracker</span>
+            <button id="ham-btn" class="hamburger" aria-label="Open menu"></button>
+        </header>
+        <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li  class="current"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="form-grid">
+            <h1>Get recent information</h1>
+            <div class="contact-grid">
+                <div class="container-1">
+                    <form method="GET" action="thankyou.html" class="form">
+                        <fieldset>
+                            <legend>Subscribe for Satellite Updates</legend>
+
+                            <!-- First Name -->
+                            <label>
+                                First Name*
+                                <input type="text" name="first-name" title="Applicant's First Name" autocomplete="given-name" required />
+                            </label>
+
+                            <!-- Last Name -->
+                            <label>
+                                Last Name*
+                                <input type="text" name="last-name" title="Applicant's Last Name" autocomplete="family-name" required />
+                            </label>
+
+                            <!-- Email -->
+                            <label>
+                                Email Address*
+                                <input
+                                    type="email"
+                                    name="email"
+                                    title="Applicant's Email Address"
+                                    autocomplete="email"
+                                    placeholder="example@domain.com"
+                                    required
+                                />
+                            </label>
+
+                            <!-- Mobile Phone Number -->
+                            <label>
+                                Mobile Phone Number*
+                                <input type="tel" name="mobile" title="Mobile Phone Number" autocomplete="tel" required />
+                            </label>
+
+                            <!-- Organization Name -->
+                            <label>
+                                Organization Name*
+                                <input type="text" name="organization" title="Business or Organization Name" autocomplete="organization" required />
+                            </label>
+
+                            <!-- Membership Level -->
+                            <label for="subscription-type">
+                                Subscription Type*
+                                <select id="subscription-type" name="subscription-type" title="Select Subscription Type" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="weekly">Weekly Newsletter</option>
+                                <option value="monthly">Monthly Newsletter</option>
+                                <option value="articles-only">Only Satellite Articles</option>
+                                </select>
+                            </label>
+
+
+                            <!-- Timestamp -->
+                            <input type="hidden" name="timestamp" id="timestamp" value="" />
+
+                            <!-- Submit Button -->
+                            <input type="submit" value="Subscribe" />
+                        </fieldset>
+                    </form>
+                </div>
+        </main>
+
+        <footer>
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Developed by Joel Lara Luna</p>
+                <p>For WDD231: Frontend Development</p>
+                <p>Email: <a href="mailto:joel@orbittracker.dev">joel@orbittracker.dev</a></p>
+            </section>
+
+            <section class="site-info">
+                <h2>Site Information</h2>
+                <p>This website provides real-time orbital data for satellite tracking and educational purposes.</p>
+                <p><span id="currentYear"></span></p>
+                <p><span id="lastModified"></span></p>
+            </section>
+        </footer>
+        </div>
+    </body>
+</html>

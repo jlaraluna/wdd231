@@ -1,0 +1,122 @@
+@media only screen and (min-width: 1025px) {
+    /* === HEADER === */
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* === NAVIGATION === */
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    /* === DIRECTORY VIEW (GRID MODE) === */
+
+    
+    .discover-grid {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1rem;
+        margin: 0 auto;
+    }
+
+    #cards section {
+        padding: 1.5rem;
+    }
+
+
+    /* === DIRECTORY VIEW (LIST MODE OVERRIDE) === */
+    #cards.list section {
+        grid-template-columns: 2fr 2fr;
+    }
+
+    /* === FOOTER === */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    footer section {
+        flex: 1;
+    }
+
+    /* === HERO === */
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
+    .home-grid {
+        grid-template-columns: 1.5fr 2fr 2fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "headline    headline      headline"
+            "events      weather      spotlight"
+            "events      forecast     spotlight";
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    h1 {
+        grid-area: headline;
+        margin-top: 40px;
+    }
+
+    .card--launch {
+        grid-area: events;
+    }
+
+    .card--weather {
+        grid-area: weather;
+    }
+
+    .card--forecast {
+        grid-area: forecast;
+    }
+
+    #dynamic-articles.spotlight {
+        grid-area: spotlight;
+    }
+
+    .card__button {
+    height: 100%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
