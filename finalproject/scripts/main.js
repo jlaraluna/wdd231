@@ -7,9 +7,6 @@ import { showConfirmation } from './thankyou.js';
 import { setTimestamp } from './form.js';
 import { trackVisits } from './visit-tracking.js';
 
-
-
-
 showDate();
 initNavigation();
 initWeather();
