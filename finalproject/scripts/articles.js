@@ -11,7 +11,7 @@ export async function loadArticles() {
     articles = data.articles;
     if (articles.length) {
       displayArticle(articles[currentIndex]);
-      setInterval(showNextArticle, 4000); // cada 4 segundos rota
+      setInterval(showNextArticle, 4000); 
     }
   } catch (err) {
     console.error("Error loading articles:", err);
@@ -19,17 +19,17 @@ export async function loadArticles() {
 }
 
 function displayArticle(article) {
-  container.innerHTML = ''; // Limpia el anterior
+  container.innerHTML = ''; 
   const section = document.createElement('section');
   section.classList.add('article');
 
   const title = document.createElement('h2');
   title.textContent = article.title;
 
-  const img = document.createElement('img');
-  img.src = article.image;
-  img.alt = article.title;
-  img.loading = "lazy";
+  // const img = document.createElement('img');
+  // img.src = article.image;
+  // img.alt = article.title;
+  // img.loading = "lazy";
 
   const summary = document.createElement('p');
   summary.textContent = article.summary;
