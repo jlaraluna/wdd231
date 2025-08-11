@@ -26,11 +26,6 @@ function displayArticle(article) {
   const title = document.createElement('h2');
   title.textContent = article.title;
 
-  // const img = document.createElement('img');
-  // img.src = article.image;
-  // img.alt = article.title;
-  // img.loading = "lazy";
-
   const summary = document.createElement('p');
   summary.textContent = article.summary;
 
@@ -40,7 +35,7 @@ function displayArticle(article) {
   link.target = "_blank";
   link.rel = "noopener noreferrer";
 
-  section.append(title, img, summary, link);
+  section.append(title, summary, link);
   container.appendChild(section);
 }
 
