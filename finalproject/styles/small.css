@@ -198,6 +198,7 @@ footer a:hover { text-decoration: underline; }
     filter: brightness(0.5);
 }
 .card__overlay {
+    display: block;
     position: absolute;
     bottom: 0;
     padding: 1rem;
