@@ -22,15 +22,16 @@
 
     --font-heading: "IBM Plex Sans", sans-serif;
     --font-body: "Public Sans", sans-serif;
+
+    /* Variables faltantes agregadas */
+    --color-text-dark: #333333;
+    --color-secondary-orange: #ff6600;
 }
 
 body {
     background: var(--background-color);
     font-family: var(--font-body);
     height: 100%;
-}
-
-body {
     display: flex;
     flex-direction: column;
 }
@@ -285,9 +286,13 @@ footer a:hover {
 .card__background {
     position: absolute;
     inset: 0;
+    background-image: url('../images/launch.webp');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     filter: brightness(0.5);
+    width: 100%;
+    height: 100%;
 }
 
 .card__overlay {
@@ -372,79 +377,73 @@ footer a:hover {
     font-size: 1rem;
 }
 
-
+/* Dynamic articles */
 #dynamic-articles {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-height: 290px;
 }
-
-#dynamic-articles {
-  min-height: 290px;
-}
-
 
 #dynamic-articles .article {
-  background: #f9f9f9;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
 }
 
 #dynamic-articles .article h2 {
-  font-family: var(--font-heading);
-  color: var(--primary-color);
-  font-size: 1.3rem;
-  text-transform: uppercase;
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    text-transform: uppercase;
 }
 
 #dynamic-articles .article img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
 }
 
 #dynamic-articles .article p {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  color: var(--text-color);
-  line-height: 1.4;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.4;
 }
 
 #dynamic-articles .article a {
-  align-self: flex-start;
-  padding: 0.4rem 0.8rem;
-  color: var(--secondary-color);
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+    align-self: flex-start;
+    padding: 0.4rem 0.8rem;
+    color: var(--secondary-color);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 #dynamic-articles .article a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .home-grid {
-  display: grid;
-  gap: 1rem;
-  padding: 0 0.5rem;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "headline"
-    "events"
-    "weather"
-    "forecast"
-    "spotlight";
+    display: grid;
+    gap: 1rem;
+    padding: 0 0.5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "headline"
+        "events"
+        "weather"
+        "forecast"
+        "spotlight";
 }
-
-
 
 /* === LIST VIEW OVERRIDES === */
 #cards.list {
@@ -480,7 +479,6 @@ footer a:hover {
 #cards.list p {
     display: none;
 }
-
 
 /* ----------- FORM ----------- */
 
@@ -566,7 +564,7 @@ legend {
 /* ----------- THANKS ----------- */
 
 .thanks-main {
-    flex: 1; /* para que ocupe todo el espacio entre header y footer */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -600,12 +598,8 @@ legend {
 
 .confirmation-details li {
     font-weight: 500;
-    padding-top: 1rem;
     font-size: 16px;
     text-transform: uppercase;
-}
-
-.confirmation-details li {
     border-bottom: 1px solid #ddd;
     padding: 0.5rem 0;
 }
@@ -615,4 +609,3 @@ legend {
     width: 150px;
     color: var(--text-muted);
 }
-
