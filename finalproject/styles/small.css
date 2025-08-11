@@ -58,9 +58,6 @@ h1 {
     text-transform: uppercase;
     color: var(--text-color);
 }
-p {
-    font-size: 16px;
-}
 
 /* Header */
 header {
@@ -157,19 +154,6 @@ footer a:hover { text-decoration: underline; }
     width: 100%;
     object-fit: cover;
 }
-.hero .cta {
-    position: absolute;
-    left: 50%;
-    bottom: 20%;
-    transform: translateX(-50%);
-    padding: 0.5rem 1rem;
-    font-family: "Epilogue", sans-serif;
-    font-weight: 700;
-    color: var(--text-light);
-    background: var(--primary-color);
-    transition: transform 0.3s ease;
-}
-.hero .cta:hover { transform: translateX(-50%) scale(1.05); }
 
 /* Cards */
 .card {
