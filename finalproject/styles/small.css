@@ -378,11 +378,7 @@ legend {
     padding: 8px;
     margin-top: 5px;
 }
-.form select:focus,
-.form textarea:focus {
-    outline: none;
-    border: 2px solid var(--color-secondary-orange);
-}
+
 .form input[type="submit"] {
     border: none;
     background: var(--button-color);
